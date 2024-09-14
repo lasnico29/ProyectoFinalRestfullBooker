@@ -11,7 +11,6 @@ Feature: Booking Endpoint
         #probar con 404 y 400 y si funciona
         Then I verify that the status code is 400
         Examples:
-        Examples:
           | invalidCharacter |
           | 1abc             |
           | %%               |
