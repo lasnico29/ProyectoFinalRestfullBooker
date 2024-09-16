@@ -30,3 +30,9 @@ Feature: Booking Endpoint
       | Nicolas   | Moscoso  | 1230       | true        | 2019-01-01 | 2020-02-03 | desayuno        |
     And I get the created booking by ID
     Then I verify that the booking details are correct
+
+  Scenario: Create a booking and verify the status code 400 if firstname is not completed
+    When I create a booking with the following details
+      | firstname | lastname | totalprice | depositpaid | checkin    | checkout   | additionalneeds |
+      |           | Moscoso  | 1230       | true        | 2019-01-01 | 2020-02-03 | desayuno        |
+    Then I verify that the status code is 400

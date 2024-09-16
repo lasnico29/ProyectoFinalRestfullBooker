@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>sept 14, 2024 07:41:40 p. m.</span>
+			<span class='label blue darken-3 suite-start-time'>sept 16, 2024 01:54:12 p. m.</span>
 			</a>
 		</ul>
 	</div>
@@ -126,12 +126,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='37%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='33%'>
                     <span class='strong'>3</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='62%'>
-                    5</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
+                    6</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -146,12 +146,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='72%'>
-                    <span class='strong'>13</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='70%'>
+                    <span class='strong'>14</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='27%'>
-                    5</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='30%'>
+                    6</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -177,7 +177,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Booking Endpoint</span>
-						<span class='test-time'>sept 14, 2024 07:41:40 p. m.</span>
+						<span class='test-time'>sept 16, 2024 01:54:12 p. m.</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -190,7 +190,7 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 02.304</span>
+	<span class='duration right label'>00 00 03.518</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: /booking/(any id that exists) should return the specific client</div>
 	</div>
@@ -217,7 +217,7 @@
 </div>
 <div class='scenario outline node' test-id='6' status='fail'>
 
-	<span class='duration right label'>00 00 03.382</span>
+	<span class='duration right label'>00 00 03.257</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: /booking/(invalidCharacter) should return status code 400</div>
 	</div>
@@ -437,7 +437,7 @@ Expected status code <400> but was <404>.
 </div>
 <div class='scenario node' test-id='22' status='pass'>
 
-	<span class='duration right label'>00 00 00.876</span>
+	<span class='duration right label'>00 00 00.877</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Create a booking and verify the details</div>
 	</div>
@@ -460,7 +460,7 @@ Expected status code <400> but was <404>.
 </div>
 <div class='scenario node' test-id='25' status='pass'>
 
-	<span class='duration right label'>00 00 01.392</span>
+	<span class='duration right label'>00 00 01.491</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Create a booking and verify the details with a GET call</div>
 	</div>
@@ -483,6 +483,55 @@ Expected status code <400> but was <404>.
 			<div class="step-name" title="(StepDefinitions.BookingSteps.verifyBookingDetails())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that the booking details are correct</div>
 
 
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='29' status='fail'>
+
+	<span class='duration right label'>00 00 00.967</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Create a booking and verify the status code 400 if firstname is not completed</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='30' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(StepDefinitions.BookingSteps.createBooking(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I create a booking with the following details</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>firstname</td><td>lastname</td><td>totalprice</td><td>depositpaid</td><td>checkin</td><td>checkout</td><td>additionalneeds</td></tr><tr><td></td><td>Moscoso</td><td>1230</td><td>true</td><td>2019-01-01</td><td>2020-02-03</td><td>desayuno</td></tr><tr><td>Nicolas</td><td></td><td>1230</td><td>true</td><td>2019-01-01</td><td>2020-02-03</td><td>desayuno</td></tr><tr><td>Nicolas</td><td>Moscoso</td><td></td><td>true</td><td>2019-01-01</td><td>2020-02-03</td><td>desayuno</td></tr></table></div>
+		</li>
+		<li test-id='31' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(StepDefinitions.BookingSteps.verifyStatusCode(int))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I verify that the status code is 400</div>
+
+
+					<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at StepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:33)
+	at ✽.I verify that the status code is 400(file:///C:/NICO%20TODA%20MI%20INFORMACION%202/UPB/CERTIFICACION%20II/ProyectoFinal%20Si%20O%20si/Proyecto_Final_Restfull_Booker/src/test/resources/booking.feature:40)
+</textarea>
 		</li>
 	</ul>
 </div>
@@ -531,7 +580,7 @@ Expected status code <400> but was <404>.
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
 						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>5</span></span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -545,7 +594,7 @@ Expected status code <400> but was <404>.
 								</thead>
 								<tbody>
 									<tr>
-										<td>sept 14, 2024 07:41:43 p. m.</td>
+										<td>sept 16, 2024 01:54:17 p. m.</td>
 										<td class='linked' test-id='9'>Then I verify that the status code is 400</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
@@ -579,7 +628,7 @@ Expected status code <400> but was <200>.
 										</td>
 									</tr>
 									<tr>
-										<td>sept 14, 2024 07:41:44 p. m.</td>
+										<td>sept 16, 2024 01:54:17 p. m.</td>
 										<td class='linked' test-id='12'>Then I verify that the status code is 400</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
@@ -613,7 +662,7 @@ Expected status code <400> but was <200>.
 										</td>
 									</tr>
 									<tr>
-										<td>sept 14, 2024 07:41:45 p. m.</td>
+										<td>sept 16, 2024 01:54:18 p. m.</td>
 										<td class='linked' test-id='15'>Then I verify that the status code is 400</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
@@ -647,7 +696,7 @@ Expected status code <400> but was <200>.
 										</td>
 									</tr>
 									<tr>
-										<td>sept 14, 2024 07:41:45 p. m.</td>
+										<td>sept 16, 2024 01:54:19 p. m.</td>
 										<td class='linked' test-id='18'>Then I verify that the status code is 400</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
@@ -681,8 +730,42 @@ Expected status code <400> but was <200>.
 										</td>
 									</tr>
 									<tr>
-										<td>sept 14, 2024 07:41:46 p. m.</td>
+										<td>sept 16, 2024 01:54:19 p. m.</td>
 										<td class='linked' test-id='21'>Then I verify that the status code is 400</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at StepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:33)
+	at ✽.I verify that the status code is 400(file:///C:/NICO%20TODA%20MI%20INFORMACION%202/UPB/CERTIFICACION%20II/ProyectoFinal%20Si%20O%20si/Proyecto_Final_Restfull_Booker/src/test/resources/booking.feature:12)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>sept 16, 2024 01:54:23 p. m.</td>
+										<td class='linked' test-id='31'>Then I verify that the status code is 400</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
 Expected status code <400> but was <200>.
@@ -742,31 +825,31 @@ Expected status code <400> but was <200>.
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>sept 14, 2024 07:41:40 p. m.</div>
+					<div class='panel-lead'>sept 16, 2024 01:54:12 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>sept 14, 2024 07:41:48 p. m.</div>
+			 		<div class='panel-lead'>sept 16, 2024 01:54:23 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 08.352</div>
+					<div class='panel-lead'>00 00 10.835</div>
 				</div>
 			</div>
 		</div>
@@ -784,17 +867,17 @@ Expected status code <400> but was <200>.
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 8,
+				childCount: 9,
 				passChild: 3,
-				failChild: 5,
+				failChild: 6,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 18,
-				passGrandChild: 13,
-				failGrandChild: 5,
+				grandChildCount: 20,
+				passGrandChild: 14,
+				failGrandChild: 6,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -805,7 +888,7 @@ Expected status code <400> but was <200>.
 		
 		<script>
 			var timeline = {
-			        "Booking Endpoint":7.97
+			        "Booking Endpoint":10.121
 			};
 		</script>
 		

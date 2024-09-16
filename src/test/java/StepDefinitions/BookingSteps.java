@@ -61,6 +61,8 @@ public class BookingSteps {
         client.setAdditionalneeds(data.get(0).get("additionalneeds"));
 
         response = Request.post(BookingEndPoints.POST_BOOKING, client);
+
+
     }
     @Then("I verify that the booking was created successfully")
     public void verifyBookingCreation() {
